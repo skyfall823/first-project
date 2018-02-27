@@ -1,17 +1,72 @@
+
 <!DOCTYPE html>
-<html>
-<body>
-<h2>JavaScript Test Template</h2>
-<h3>The program output</h3>
-<hr>
-<p id="output"></p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hw3</title>
+</head>
+
+<body>
+
+<h2>JavaScript Homework</h2>
+
+<p>The program output</p>
+
 <hr>
 
+
 <script>
-const message = prompt('Enter a message')
-// alert('Your input is: ' + message)
-const output = document.getElementById("output")
-output.innerHTML = 'Your message is ' + message
+
+var x,y,z;
+
+x = prompt('Please input the start: ')
+
+y  = prompt('Please input end: ')
+
+z = prompt('Please input step: ')
+
+
+x = parseInt(x);
+y = parseInt(y);
+z = parseInt(z);
+
+
+function sum (x,z,y){
+    return x+z+y
+}
+
+if(isNaN(sum(x,y,z))){
+
+    alert ("one of inputs is not a number, refresh and try again ");
+    
+    }
+
+if(x == 0){
+    alert("you entered invalid integer , lease reload and try again")
+}
+
+if(y == 0){
+    alert("you entered invalid integer , lease reload and try again")
+}
+
+if(z == 0){
+    alert("you entered invalid integer , lease reload and try again")
+}
+
+document.write("array is " ,x+" ",y+" " , z+" " +"<br>" ); 
+
+document.write("sum is "+sum(x,y,z)+"<br>");
+
+document.write("binary is "+(x.toString(2))+",");
+
+document.write((y.toString(2)).substr(-8)+",");
+
+document.write((z.toString(2)).substr(-8));
 </script>
-</body>
-</html>
+
+<hr>
+
+</body>
+</html>
