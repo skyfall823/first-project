@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,66 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hw3</title>
 </head>
-
 <body>
+    <h1>Homework 3</h1>
 
-<h2>JavaScript Homework</h2>
+    <hr>
 
-<p>The program output</p>
-
-<hr>
-
-
+   
 <script>
+    
 
-var x,y,z;
+    
 
-x = prompt('Please input the start: ')
+var start = prompt("Please input the start: ")
+var end = prompt("Please input end: ")
+var step = prompt("Please input step: ")
+var array= [];
+var start = parseInt(start);
+var end = parseInt(end);
+var step = parseInt(step);
 
-y  = prompt('Please input end: ')
-
-z = prompt('Please input step: ')
-
-
-x = parseInt(x);
-y = parseInt(y);
-z = parseInt(z);
-
-
-function sum (x,z,y){
-    return x+z+y
+if(step == 0){
+    alert("you entered invalid integer , Please reload and try again")
 }
-
-if(isNaN(sum(x,y,z))){
-
+if(isNaN(array.reduce(sum))){
     alert ("one of inputs is not a number, refresh and try again ");
     
     }
+for(var i=start; i < end;i+=step) {
+    array.push(i);
 
-if(x == 0){
-    alert("you entered invalid integer , please reload and try again")
 }
 
-if(y == 0){
-    alert("you entered invalid integer , please reload and try again")
+for(var i=start; a > end;i-=step) {
+    arr.push(i);
+
 }
 
-if(z == 0){
-    alert("you entered invalid integer , please reload and try again")
+function sum(num1, num2) {
+    return num1 + num2;
 }
+arr.push(end);//?
 
-document.write("array is " ,x+" ",y+" " , z+" " +"<br>" ); 
 
-document.write("sum is "+sum(x,y,z)+"<br>");
 
-document.write("binary is "+(x.toString(2))+",");
+ 
 
-document.write((y.toString(2)).substr(-8)+",");
+document.write("array is " + array +"<br>");
+document.write("sum is " + array.reduce(sum) +"<br>");
+document.write("binary is "+ binary(a,y));
 
-document.write((z.toString(2)).substr(-8));
 </script>
-
-<hr>
+    
+ <hr>
 
 </body>
 </html>
+
+
+
+
+
+
+
