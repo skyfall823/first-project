@@ -37,10 +37,7 @@ for(var startNum=start; startNum < end; startNum += step) {
 
 }
 
-for(var startNum=start; startNum > end; startNum-=step) {
-    arr.push(startNum);
 
-}
 
 function sum(a, z) {
     return a + z;
@@ -48,7 +45,7 @@ function sum(a, z) {
 arr.push(end);
 
 if(isNaN(arr.reduce(sum))){
-    alert ("one of inputs is not a number, refresh and try again ");
+    alert ("You entered invalid integer, please reload and try again ");
     
     }
 
@@ -56,7 +53,7 @@ if(isNaN(arr.reduce(sum))){
 
 document.write("The array is " + arr +"<br>");
 document.write("The sum is " + arr.reduce(sum) +"<br>");
-document.write("The binary is "+ binary(startNum , end));
+
 
 </script>
     
