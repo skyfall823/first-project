@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hw3</title>
+    <title>Homework3</title>
 </head>
+
 <body>
     <h1>Homework 3</h1>
-
     <hr>
 
    
 <script>
     
+var arr= [];
+    
 
-var start = prompt("Please input the start: ")
-var end = prompt("Please input end: ")
-var step = prompt("Please input step: ")
-var array= [];
+var start = prompt('Please input the start: ')
+
+var end = prompt('Please input end: ')
+
+var step = prompt('Please input step: ')
+
 var start = parseInt(start);
 var end = parseInt(end);
 var step = parseInt(step);
@@ -26,43 +30,37 @@ var step = parseInt(step);
 if(step == 0){
     alert("you entered invalid integer , Please reload and try again")
 }
-if(isNaN(array.reduce(sum))){
+
+
+for(var startNum=start; startNum < end; startNum += step) {
+    arr.push(startNum);
+
+}
+
+for(var startNum=start; startNum > end; startNum-=step) {
+    arr.push(startNum);
+
+}
+
+function sum(a, z) {
+    return a + z;
+}
+arr.push(end);
+
+if(isNaN(arr.reduce(sum))){
     alert ("one of inputs is not a number, refresh and try again ");
     
     }
-for(var i=start; i < end;i+=step) {
-    array.push(i);
-
-}
-
-for(var i=start; a > end;i-=step) {
-    arr.push(i);
-
-}
-
-function sum(num1, num2) {
-    return num1 + num2;
-}
-arr.push(end);//?
-
-
 
  
 
-document.write("array is " + array +"<br>");
-document.write("sum is " + array.reduce(sum) +"<br>");
-document.write("binary is "+ binary(a,y));
+document.write("The array is " + arr +"<br>");
+document.write("The sum is " + arr.reduce(sum) +"<br>");
+document.write("The binary is "+ binary(startNum , end));
 
 </script>
     
- <hr>
+<hr>
 
 </body>
 </html>
-
-
-
-
-
-
-
