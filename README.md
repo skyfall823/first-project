@@ -1,4 +1,4 @@
-# IS445ProjectReal
+# IS445Project
 
 Step 1: Download Repository
 
