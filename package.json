@@ -1,28 +1,18 @@
 {
-  "name": "first-project",
+  "name": "rest_api",
   "version": "1.0.0",
-  "description": "Learning Process",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/skyfall823/first-project.git"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/skyfall823/first-project/issues"
-  },
-  "homepage": "https://github.com/skyfall823/first-project#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
     "express": "^4.16.2"
-  },
-  "engines": {
-    "node": "9.4.0"
   }
 }
-  
