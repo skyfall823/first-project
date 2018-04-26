@@ -1,2 +1,1 @@
-# homework1
-First Homework
+# Course Project
